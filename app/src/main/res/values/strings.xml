@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Secure Screen Demo</string>
+    <string name="home_title">Best-effort защита от Accessibility</string>
+    <string name="home_subtitle">Демо показывает разницу между обычным экраном и режимом скрытия, который блокирует accessibility-дерево, ставит FLAG_SECURE и помечает корневой View как sensitive там, где это поддерживается.</string>
+    <string name="switch_title">Скрыть содержимое экрана</string>
+    <string name="switch_summary_off">Режим выключен: accessibility service сможет читать текст и значения полей.</string>
+    <string name="switch_summary_on">Режим включен: secure-ui блокирует дерево и best-effort скрывает содержимое от accessibility service.</string>
+    <string name="compose_screen_title">Compose Screen</string>
+    <string name="xml_screen_title">XML Screen</string>
+    <string name="open_compose">Открыть Compose экран</string>
+    <string name="open_xml">Открыть XML экран</string>
+    <string name="open_accessibility_settings">Открыть настройки Accessibility</string>
+    <string name="open_attacker_app">Открыть attacker app</string>
+    <string name="attacker_missing">Установи модуль attacker и включи его Accessibility Service в настройках.</string>
+    <string name="compose_secret_text">Секрет Compose: код подтверждения 517 204 и резервная фраза orbit stone maple.</string>
+    <string name="compose_login_label">Логин клиента</string>
+    <string name="compose_login_value">ceo@secured.demo</string>
+    <string name="compose_password_label">Пароль</string>
+    <string name="compose_password_value">P@55w0rd!compose</string>
+    <string name="compose_card_label">Номер карты</string>
+    <string name="compose_card_value">4242 4242 4242 4242</string>
+    <string name="overlay_title">Secure mode включён</string>
+    <string name="overlay_body">Библиотека `secure-ui` скрыла accessibility-дерево и добавила дополнительные best-effort флаги. Внешний Accessibility Service больше не должен получать чувствительный контент этого экрана.</string>
+    <string name="overlay_hide_inline">Скрыть эту demo-плашку</string>
+    <string name="xml_title">XML экран с чувствительным контентом</string>
+    <string name="xml_secret_label">Секретный текст</string>
+    <string name="xml_secret_value">XML: токен доступа A1B2-C3D4-E5F6 и служебный PIN 7788.</string>
+    <string name="xml_email_hint">Email сотрудника</string>
+    <string name="xml_email_value">finance@secured.demo</string>
+    <string name="xml_password_hint">Пароль от CRM</string>
+    <string name="xml_password_value">Xml-P@ss-981</string>
+    <string name="xml_account_hint">Номер счёта</string>
+    <string name="xml_account_value">40702810900000012345</string>
+    <string name="back">Назад</string>
+    <string name="status_off">Сейчас экран открыт для accessibility.</string>
+    <string name="status_on">Сейчас экран скрыт от accessibility best-effort политикой.</string>
+</resources>

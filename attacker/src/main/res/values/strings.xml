@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Accessibility Attacker Demo</string>
+    <string name="service_name">UI Stealer Service</string>
+    <string name="service_description">Логирует доступный UI victim app через AccessibilityService.</string>
+</resources>

@@ -71,7 +71,7 @@ private fun AttackerScreen(
                 fontWeight = FontWeight.Bold,
             )
             Text(
-                text = "Этот модуль логирует всё, что удалось прочитать из victim app `com.grigorevmp.securedscreen`. При выключенном secure mode здесь должны появляться реальные тексты и значения полей. После включения secure mode логи должны стать пустыми или потерять чувствительный контент.",
+                text = "This module logs everything it can read from the victim app `com.grigorevmp.securedscreen`. When secure mode is off, real texts and field values should appear here. After secure mode is enabled, the logs should become empty or lose sensitive content.",
                 style = MaterialTheme.typography.bodyLarge,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
@@ -85,14 +85,14 @@ private fun AttackerScreen(
                     onClick = openAccessibilitySettings,
                     shape = RoundedCornerShape(20.dp),
                 ) {
-                    Text(text = "Открыть Accessibility")
+                    Text(text = "Open Accessibility")
                 }
                 Button(
                     modifier = Modifier.weight(1f),
                     onClick = clearLogs,
                     shape = RoundedCornerShape(20.dp),
                 ) {
-                    Text(text = "Очистить логи")
+                    Text(text = "Clear logs")
                 }
             }
 
@@ -103,7 +103,7 @@ private fun AttackerScreen(
                 if (logs.isEmpty()) {
                     item {
                         LogCard(
-                            text = "Логов пока нет. Включи service, открой victim app и походи по XML/Compose экранам.",
+                            text = "No logs yet. Enable the service, open the victim app, and navigate through the XML and Compose screens.",
                         )
                     }
                 } else {

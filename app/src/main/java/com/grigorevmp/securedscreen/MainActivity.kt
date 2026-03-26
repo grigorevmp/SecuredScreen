@@ -99,7 +99,7 @@ private fun HomeScreen(
                 fontWeight = FontWeight.Bold,
             )
             Text(
-                text = "Демо показывает, что accessibility service по умолчанию увидит чувствительные тексты и поля ввода. После включения global switch библиотека переводит экраны в best-effort secure mode.",
+                text = "This demo shows that the accessibility service can read sensitive texts and input fields by default. After you enable the global switch, the library moves screens into best-effort secure mode.",
                 style = MaterialTheme.typography.bodyLarge,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
@@ -141,8 +141,8 @@ private fun HomeScreen(
             }
 
             GuidanceCard(
-                title = "Как проверять",
-                body = "1. Установи и включи attacker app как Accessibility Service. 2. Открой XML или Compose экран. 3. В attacker app посмотри логи до и после включения switch.",
+                title = "How to test",
+                body = "1. Install and enable the attacker app as an Accessibility Service. 2. Open the XML or Compose screen. 3. Check the logs in the attacker app before and after enabling the switch.",
             )
 
             Row(

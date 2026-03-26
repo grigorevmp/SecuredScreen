@@ -36,7 +36,10 @@ android {
 }
 
 dependencies {
-    implementation(project(":secure-ui"))
+    // secure-ui: use the compiled AAR instead of the project module
+    implementation(files("libs/secure-ui-release.aar"))
+
+    // secure-ui transitive dependencies (the AAR does not pull them in automatically)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.lifecycle.runtime.ktx)
@@ -44,6 +47,8 @@ dependencies {
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.compose.foundation)
     implementation(libs.androidx.compose.ui)
+
+    // App dependencies
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)

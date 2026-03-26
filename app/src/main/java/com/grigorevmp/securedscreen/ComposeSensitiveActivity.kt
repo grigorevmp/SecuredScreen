@@ -88,16 +88,16 @@ private fun ComposeSensitiveScreen(
                 verticalArrangement = Arrangement.spacedBy(16.dp),
             ) {
                 Button(onClick = onBack, shape = RoundedCornerShape(20.dp)) {
-                    Text(text = "Назад")
+                    Text(text = "Back")
                 }
 
                 Text(
-                    text = "Compose экран с чувствительным контентом",
+                    text = "Compose screen with sensitive content",
                     style = MaterialTheme.typography.headlineSmall,
                     fontWeight = FontWeight.Bold,
                 )
                 Text(
-                    text = "Когда secure mode выключен, accessibility service увидит этот текст и значения полей. Когда включен, activity блокирует всё дерево best-effort политикой.",
+                    text = "When secure mode is off, the accessibility service can read this text and the field values. When it is on, the activity blocks the entire tree with a best-effort policy.",
                     style = MaterialTheme.typography.bodyLarge,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
@@ -113,12 +113,12 @@ private fun ComposeSensitiveScreen(
                         verticalArrangement = Arrangement.spacedBy(8.dp),
                     ) {
                         Text(
-                            text = "Секрет Compose",
+                            text = "Compose secret",
                             fontWeight = FontWeight.Bold,
                             color = MaterialTheme.colorScheme.onSecondaryContainer,
                         )
                         Text(
-                            text = "Код подтверждения 517 204 и резервная фраза orbit stone maple.",
+                            text = "Confirmation code 517 204 and backup phrase orbit stone maple.",
                             style = MaterialTheme.typography.bodyLarge,
                             color = MaterialTheme.colorScheme.onSecondaryContainer,
                         )
@@ -129,21 +129,21 @@ private fun ComposeSensitiveScreen(
                     modifier = Modifier.fillMaxWidth(),
                     value = login,
                     onValueChange = { login = it },
-                    label = { Text(text = "Логин клиента") },
+                    label = { Text(text = "Client login") },
                 )
 
                 OutlinedTextField(
                     modifier = Modifier.fillMaxWidth(),
                     value = password,
                     onValueChange = { password = it },
-                    label = { Text(text = "Пароль") },
+                    label = { Text(text = "Password") },
                 )
 
                 OutlinedTextField(
                     modifier = Modifier.fillMaxWidth(),
                     value = cardNumber,
                     onValueChange = { cardNumber = it },
-                    label = { Text(text = "Номер карты") },
+                    label = { Text(text = "Card number") },
                 )
                 Spacer(modifier = Modifier.height(24.dp))
             }
@@ -181,13 +181,13 @@ private fun SecureOverlay(
                 horizontalAlignment = Alignment.CenterHorizontally,
             ) {
                 Text(
-                    text = "Secure mode включён",
+                    text = "Secure mode enabled",
                     style = MaterialTheme.typography.headlineSmall,
                     fontWeight = FontWeight.Bold,
                     color = MaterialTheme.colorScheme.primary,
                 )
                 Text(
-                    text = "Accessibility tree скрыт. В attacker app логи должны перестать содержать чувствительные тексты и значения полей этого экрана.",
+                    text = "The accessibility tree is hidden. In the attacker app, logs should stop containing sensitive texts and field values from this screen.",
                     style = MaterialTheme.typography.bodyLarge,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
